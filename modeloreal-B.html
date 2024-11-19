@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="nike-logo.png" type="image/x-icon">
+    <title>Modelo real.B - TP07</title>
+</head>
+
+<style>
+    body {
+        /*Primero se pone este atributo para que la página no tenga bordes blancos*/
+        margin: 0;
+    }
+
+    .box {
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+    }
+
+    p {
+        color: white;
+    }
+
+    .box-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 12px;
+
+    }
+
+    .box-2 {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(241, 238, 238);
+        align-items: center;
+    }
+
+
+    .ul-header {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .ul-header-2 {
+        display: flex;
+        list-style: none;
+        padding-right: 10px;
+        gap: 10px;
+
+    }
+
+    .ul-header-2 li {
+        border-right: 1px solid black;
+        gap: 10px;
+        padding-right: 10px;
+
+    }
+
+
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    img {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container-buscar {
+        display: flex;
+        align-items: center;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .encabezado-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gris {
+        color: gray;
+    }
+
+
+
+    .rojo {
+        color: red;
+    }
+
+    .productos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    .foot {
+        color: white;
+    }
+
+    .color {
+        color: white;
+    }
+
+    .color-lInferior {
+        color: #7e7e7e;
+    }
+
+
+    .pie {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .separaciones-footer {
+        margin: 20px;
+    }
+
+    .lista-footer {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .imagen-afip {
+        margin: 20px;
+    }
+
+    .redsoc {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 50px;
+    }
+
+    .color-footer-2 {
+        color: #7e7e7e;
+    }
+
+    .footer-2 {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pie-2 {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-right: 10px;
+    }
+</style>
+
+
+<body>
+    <header> <!--Lo primero que hice fue utilizar la etiqueta header para armar el encabezado de la página-->
+        <div class="container">
+            <!--Seguido de eso, usé la etiqueta div y arme un selector de clases con el nombre "Container". Despues utilice otro div con la clase "box" -->
+            <div class="box">
+                <div>
+                    <p>
+                        <b>
+                            6 cuotas sin interés en todo el sitio
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box-1"> <!--Multiplque la caja box para hacer la otra parte del encabezado-->
+                <div>
+                    <img src="jordan.png" width="24x" alt="logo jordan">
+                </div>
+
+                <div>
+                    <ul class="ul-header-2">
+                        <!--hice una lista desordenada con una clase "ul-header-2" para darle múltiples opciones al usuario-->
+                        <li>
+                            <a href="">Suscribite</a> <!--cada componente de la lista está escrita como un enlace-->
+                        </li>
+
+                        <li>
+                            <a href="">Buscar tienda</a>
+                        </li>
+
+                        <li>
+                            <a href="">Eventos</a>
+                        </li>
+
+                        <li>
+                            <a href="">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-2"> <!--Utilice una tercera y ultima "box" para armar la tercera parte del encabezado.-->
+                <div>
+                    <img src="nike.svg" width="70px" alt="">
+                </div>
+
+                <div>
+                    <ul class="ul-header">
+                        <!--cree otra lista desordenada para tener categorías sobre los productos. Cada una está escrita como enlace.-->
+                        <li>
+                            <b>
+                                <a href="">Destacados</a>
+                            </b>
+                        </li>
+
+                        <li>
+                            <b>
+                                <a href="">Hombre</a>
+                            </b>
+                        </li>
+
+                        <li>
+                            <b>
+                                <a href="">Mujer</a>
+                            </b>
+                        </li>
+
+                        <li>
+                            <b>
+                                <a href="">Niño/a</a>
+                            </b>
+                        </li>
+
+                        <li>
+                            <b>
+                                <a href="">Accesorios</a>
+                            </b>
+                        </li>
+
+                        <li>
+                            <b>
+                                <a href="">Oportunidades</a>
+                            </b>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="container-buscar">
+                    <!--Debajo del encabezado hice un div con una clase "container-buscar" para poner un buscador de productos.-->
+
+                    <div>
+                        <input type="search" placeholder="Buscar">
+                    </div>
+
+                    <div>
+                        <img src="shopping-bag.png" width="30px" alt="">
+                        <!--Al lado, coloque una imágen de una bolsa de compras para almacenar los productos comprados-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="encabezado-2">
+            <!--hice un "subencabezado" para poner la cantidad de productos y cree otra lista con más enlaces-->
+            <div>
+                <p class="black">
+                    <b>
+                        87 productos
+                    </b>
+                </p>
+            </div>
+
+            <ul class="ul-header">
+                <li>
+                    <a href="">Ocultar Filtros</a>
+                </li>
+                <li>
+                    <img src="filter.png" width="20px" alt="">
+                </li>
+                <li>
+                    <a href="">Ordenar por Más Reciente</a>
+                </li>
+                <li>
+                    <img src="down-arrow.png" width="20px" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="productos">
+            <!--puse una etiqueta div con una clase "productos" en el que adentro va a tener varios div con clase "producto", imágenes, nombres, precios y descripciones de los productos. -->
+
+            <div class="producto">
+
+                <img src="pelotapremier.webp" width="400px" alt="">
+
+                <div>
+                    <p class="rojo">
+                        Lo nuevo
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            Premier League Academy
+                        </b>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gris">
+                        Pelota de Fútbol Unisex
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            $69.999
+                        </b>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="mochila.png" width="400px" alt="">
+
+                <div>
+                    <p class="rojo">
+                        Lo nuevo
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            Jan
+                        </b>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gris">
+                        Mochila Jordan para Niño/a
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            $52.999
+                        </b>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="premierpelota.webp" width="400px" alt="">
+
+                <div>
+                    <p class="rojo">
+                        Lo nuevo
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            Premier League Flight
+                        </b>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gris">
+                        Pelota de Fútbol Unisex
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            $239.999
+                        </b>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="productos-2">
+
+            <div class="producto">
+
+                <img src="pelotafutsal.webp" width="400px" alt="">
+
+                <div>
+                    <p class="rojo">
+                        Lo nuevo
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            Nike Futsal Pro
+                        </b>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gris">
+                        Pelota de Futsal Unisex
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            $84.999
+                        </b>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="gorra.webp" width="400px" alt="">
+
+                <div>
+                    <p class="black">
+                        <b>
+                            Nike DriFIT Rise
+                        </b>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gris">
+                        Gorra de Moda Unisex
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            $51.499
+                        </b>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="vincha.png" width="400px" alt="">
+
+                <div>
+                    <p class="black">
+                        <b>
+                            Nike Fury
+                        </b>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gris">
+                        Vincha de Entrenamiento para Mujer
+                    </p>
+                </div>
+
+                <div>
+                    <p class="black">
+                        <b>
+                            $39.999
+                        </b>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="pie"> <!--Lo ultimo que hice fue crear el footer de la página. hice un div con varias listas y enlaces los cuales tenian opciones para contactar al soporte técnico, etc.-->
+            <div>
+                <ul>
+                    <li class="separaciones-footer">
+                        <a class="foot" href=""><b>BUSCAR TIENDA</b></a>
+                    </li>
+
+                    <li class="separaciones-footer">
+                        <a class="foot" href=""><b>SUMATE A LA COMUNIDAD</b></a>
+                    </li>
+
+                    <li class="separaciones-footer">
+                        <a class="foot" href=""><b>SEGUÍ TU PEDIDO</b></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="separaciones-footer">
+                        <a class="foot" href=""><b>AYUDA</b></a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Envíos y entregas</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Devoluciones</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Cambios</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Autogestionar mi devolución</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Opciones de pago</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Contactate</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Defensa al consumidor</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Libro de quejas online</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href=""><b>Botón de arrepentimiento</b></a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href=""><u>Ver todos</u></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="separaciones-footer">
+                        <a class="foot" href=""><b>ACERCA DE NIKE</b></a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Propósito</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Noticias</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="separaciones-footer">
+                        <a class="foot" href=""><b>NOVEDADES NIKE</b></a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Encontrá tu calzado</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">¿Cómo elegir tu top?</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Tips saludables</a>
+                    </li>
+                    <li class="separaciones-footer">
+                        <a class="color-lInferior" href="">Promociones</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div> 
+                <a href=""><img class="imagen-afip" src="data-fiscal.webp" width="29.23px" alt=""></a>
+            </div>
+
+            <div class="lista-footer"> <!--utilice cajas con enlaces a las redes sociales de la página-->
+                <div>
+                    <a href="https://x.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" width="30px" alt=""></a>
+                </div>
+
+                <div>
+                    <a href="https://www.facebook.com/nike/?locale=es_LA"><img src="facebook-new.png" width="30px" alt=""></a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/user/nike"><img src="youtube.png" width="30px" alt=""></a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/nike/"><img src="instagram-new.png" width="30px" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-2">
+
+            <div class="footer-2">
+                <p>
+                    <img src="gps.png" width="15px" alt="">
+                </p>
+
+                <p>
+                    <a class="color" href=""><b>Argentina</b></a>
+                </p>
+
+                <div>
+                    <p class="color-footer-2">
+                        © 2023 Southbay S.R.L. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pie-2">
+                <div>
+                    <p class="color-footer-2">
+                        Hot Sale
+                    </p>
+                </div>
+
+
+                <div>
+                    <p class="color-footer-2">
+                        Términos y condiciones
+                    </p>
+                </div>
+
+
+                <div>
+                    <p class="color-footer-2">
+                        Políica de privacidad y cookies
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="redsoc">
+            <a href=""><img src="whatsapp.png" width="35px" alt=""></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
